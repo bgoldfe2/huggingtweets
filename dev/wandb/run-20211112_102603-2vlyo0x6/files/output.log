@@ -1,0 +1,32 @@
+{'train_runtime': 2.7545, 'train_samples_per_second': 3.267, 'train_steps_per_second': 1.089, 'train_loss': 1.1750978628794353, 'epoch': 3.0}
+***** train metrics *****
+  epoch                    =        3.0
+  train_loss               =     1.1751
+  train_runtime            = 0:00:02.75
+  train_samples            =          3
+  train_samples_per_second =      3.267
+  train_steps_per_second   =      1.089
+11/12/2021 10:26:05 - INFO - __main__ - *** Evaluate ***
+***** eval metrics *****
+  epoch                   =        3.0
+  eval_loss               =     2.1014
+  eval_runtime            = 0:00:00.00
+  eval_samples            =          1
+  eval_samples_per_second =    124.143
+  eval_steps_per_second   =    124.143
+  perplexity              =     8.1778
+100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  6.84it/s][INFO|trainer.py:1409] 2021-11-12 10:26:05,481 >>
+Training completed. Do not forget to share your model on huggingface.co/models =)
+100%|██████████████████████████████████████████████████████████████████████| 3/3 [00:00<00:00,  6.16it/s]
+[INFO|trainer.py:1995] 2021-11-12 10:26:05,483 >> Saving model checkpoint to /tmp/test-mlm
+[INFO|configuration_utils.py:417] 2021-11-12 10:26:05,484 >> Configuration saved in /tmp/test-mlm/config.json
+[INFO|modeling_utils.py:1060] 2021-11-12 10:26:05,883 >> Model weights saved in /tmp/test-mlm/pytorch_model.bin
+[INFO|tokenization_utils_base.py:2037] 2021-11-12 10:26:05,884 >> tokenizer config file saved in /tmp/test-mlm/tokenizer_config.json
+[INFO|tokenization_utils_base.py:2043] 2021-11-12 10:26:05,884 >> Special tokens file saved in /tmp/test-mlm/special_tokens_map.json
+[INFO|trainer.py:540] 2021-11-12 10:26:05,932 >> The following columns in the evaluation set  don't have a corresponding argument in `RobertaForMaskedLM.forward` and have been ignored: special_tokens_mask.
+[INFO|trainer.py:2243] 2021-11-12 10:26:05,933 >> ***** Running Evaluation *****
+[INFO|trainer.py:2245] 2021-11-12 10:26:05,933 >>   Num examples = 1
+[INFO|trainer.py:2248] 2021-11-12 10:26:05,933 >>   Batch size = 8
+100%|████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 2473.06it/s]
+[INFO|modelcard.py:449] 2021-11-12 10:26:05,989 >> Dropping the following result as it does not have all the necessary fields:
+{'task': {'name': 'Masked Language Modeling', 'type': 'fill-mask'}}

@@ -1,0 +1,35 @@
+{
+    "os": "Linux-5.11.0-38-generic-x86_64-with-glibc2.31",
+    "python": "3.9.7",
+    "heartbeatAt": "2021-11-12T15:26:03.690072",
+    "startedAt": "2021-11-12T15:26:03.017576",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "roberta-base",
+        "--train_file",
+        "./elonmusk_train.txt",
+        "--validation_file",
+        "./elonmusk_valid.txt",
+        "--do_train",
+        "--do_eval",
+        "--output_dir",
+        "/tmp/test-mlm"
+    ],
+    "state": "running",
+    "program": "/home/bruce/dev/huggingtweets/dev/run_mlm.py",
+    "codePath": "dev/run_mlm.py",
+    "git": {
+        "remote": "git@github.com:bgoldfe2/huggingtweets.git",
+        "commit": "68b0bd2d3fe7b28b1622998b5a53659d02cf3395"
+    },
+    "email": null,
+    "root": "/home/bruce/dev/huggingtweets",
+    "host": "bruce-3090-PhD",
+    "username": "bruce",
+    "executable": "/home/bruce/anaconda3/envs/pyTorchClone/bin/python"
+}
